@@ -1,0 +1,18 @@
+<input type="text"
+    ngxDaterangepickerMd
+    [(ngModel)]="selected"
+    [showCustomRangeLabel]="true"
+    [alwaysShowCalendars]="alwaysShowCalendars"
+    [ranges]="ranges"
+    [showClearButton]="true"
+    [showCancel]="true"
+    [linkedCalendars]="true"
+    [isTooltipDate] = "isTooltipDate"
+    [isInvalidDate] = "isInvalidDate"
+    [locale]="{applyLabel: 'Done'}"
+    (rangeClicked)="rangeClicked($event)"
+    (datesUpdated)="datesUpdated($event)"
+    [keepCalendarOpeningWithRange]="keepCalendarOpeningWithRange"
+    [showRangeLabelOnInput]="showRangeLabelOnInput"
+    class="form-control"
+    placeholder="Select please..."/>

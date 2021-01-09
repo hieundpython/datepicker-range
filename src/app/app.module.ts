@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
+import { TestDateRangeComponent } from './test-date-range/test-date-range.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestDateRangeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    NgxDaterangepickerMd.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
